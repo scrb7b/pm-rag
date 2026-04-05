@@ -32,7 +32,19 @@ pip install -r requirements.txt
 python main.py
 ```
 
-Put your `.txt` files in `data/`. Index is built on first run and cached in `.chroma/` — subsequent runs start instantly.
+## Project structure
+
+```
+pm-rag/
+├── src/
+│   ├── config.py    # paths, model names
+│   ├── indexer.py   # index build 
+│   └── main.py      
+├── data/            # put your source documents here
+└── .chroma/         # vector store
+```
+
+Put your documents in `data/`. Index is built on first run and cached in `.chroma/` — subsequent runs start instantly.
 
 ## Example
 
